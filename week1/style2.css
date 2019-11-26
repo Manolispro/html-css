@@ -1,0 +1,231 @@
+*{
+    margin:0;
+    padding:0;
+
+    
+}
+.top-bar{
+    background-color: black;
+    display:flex;
+    width:100vw;
+    height:auto;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+
+}
+.logo{
+    color:#fff;
+    flex:1; 
+    font-size:40px;
+    padding: 18px 0px 18px 18px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+
+}
+.menu{
+    position: sticky;
+    flex:3;
+}
+.menu ul{
+    display:flex;
+    list-style: none;
+    margin-top:30px;
+    flex-flow:row wrap;
+    
+}
+.menu ul li {
+    flex:1;
+    text-align:center;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+.menu ul li a{
+    color:#fff;
+    font-size:20px;
+    text-decoration: none;
+    
+}
+.menu ul li a:hover{
+color:rgb(120, 154, 189) ;
+    transition:color 0.5s linear;
+    cursor: default;
+}
+
+.home{
+    width: 100%;
+    height:100vh;
+    background-color: black;
+    padding-top:60px;
+    color:white;
+}
+.home div{
+    width:600px;
+    height:350px;
+    position: absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    margin:auto; 
+    text-align:center;
+    /* text-shadow: 1px 1px 5px white; */
+   
+
+}
+.home div h1{
+    /* font-size:45px;
+    text-transform: uppercase; */
+    font-size: 45px;
+    text-transform: uppercase;
+    width: 600px;
+    text-align: center;
+    line-height: 120px;
+    
+}
+.home div h2{
+    font-size:30px;
+    text-transform: uppercase;
+    line-height: 150%;
+    letter-spacing: 5px;
+    
+}
+
+.home div h3 {
+    
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    width: 200px;
+    text-align: center;
+    margin:auto;
+    margin-top: 40px;
+    letter-spacing: 3px;
+    border: 4px solid rgb(120, 154, 189);
+    font-weight: normal;
+    transition:background-color 0.8s linear;
+    
+}
+.home div h3 a ,a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+  }
+
+.home div h3:hover{
+    background-color:#fff;
+    color:black;
+
+}
+.home div h1 span:first-child{
+    color:rgb(120, 154, 189);
+    border-top:4px solid rgb(120, 154, 189);
+
+}
+.home div h1 span:last-child{
+    
+    border-bottom:4px solid white;
+
+}
+.home div h2 span:last-child{
+    
+    color:rgb(120, 154, 189);
+}
+.wrapper{
+    position: absolute;
+    right:55px;
+    color:black;
+  
+}
+.wrapper li{
+    list-style: none;
+    display: inline-block;
+    margin: -20px 40px;
+    font-size: 30px;
+    padding: 20px 20px;
+    
+
+}
+.wrapper li a:hover{
+
+    color:rgb(120, 154, 189);
+    transition: .5s;
+}
+.wrapper li a,a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+  }
+
+.about div{
+    text-align: justify;
+    line-height: 1.8rem;
+    width:80%;
+    height:60%;
+    margin: 30px auto;
+    box-shadow: 0px 0px 10px #222;
+    padding: 65px 40px;
+}
+.box p{
+    width: 70%;
+    height:70%;
+    box-shadow: none;
+}
+
+.about div img{
+    width:25%;
+    border:5px solid #fff;
+    float:left;
+    margin-top: -25px;
+    margin-right:20px;
+    
+}
+.about , .edu, .work{
+    width: 98vw;
+    /* height:100vh; */
+    background-color:white;
+    padding-top: 100px;
+
+}
+.about h2, .edu h2, .work h2{
+    height: 80px;
+    text-align: center; line-height: 80px; font-size: 1.8rem;
+}
+
+.edu div ul li{
+    margin:auto;
+}
+
+.work{
+    margin-bottom: 30%;
+}
+
+@media all and (max-width:700px) {
+    .top-bar{
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo{
+        padding:0px;
+    }
+    .menu ul{
+        flex-direction: column;
+        margin-top:0;
+        height:50px;
+    }
+    .menu ul li{
+        padding:5px;
+    }
+    .menu ul li a{
+        font-size:13px;
+    }
+    .home div{
+        margin-top:200px;
+        
+    }
+    .home div h1{
+        font-size: 25px;
+    }
+    .home div h2,h3{
+        font-size: 15px;
+    }
+}
+
